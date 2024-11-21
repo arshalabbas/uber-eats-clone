@@ -7,4 +7,5 @@ window.addEventListener("scroll", (e) => {
     "location-selection-visible",
     window.scrollY > window.innerHeight / 2
   );
+  console.log(window.scrollY);
 });
