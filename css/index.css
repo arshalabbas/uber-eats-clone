@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: "UberMove";
+  src: url(/assets/fonts/UberMoveRegular.otf);
+}
+
+@font-face {
   font-family: "UberMove-Medium";
   src: url(/assets/fonts/UberMoveMedium.otf);
 }
@@ -18,7 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "UberMove-Medium";
+  font-family: "UberMove";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -117,6 +122,7 @@ header:first-child div {
   white-space: nowrap;
   align-items: center;
   cursor: pointer;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-left: 28px !important;
 }
@@ -137,8 +143,8 @@ header:first-child div {
   align-items: center;
   justify-content: center;
   line-height: 16px;
-  letter-spacing: 0.4px;
-  font-weight: 500;
+  /* letter-spacing: 0.4px; */
+  font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
   cursor: pointer;
@@ -229,7 +235,7 @@ main .hero-contents h1 {
   line-height: 20px;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 .hero-element input {
@@ -243,7 +249,7 @@ main .hero-contents h1 {
 
 .hero-element input::placeholder {
   font-size: 16px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: 500;
 }
 
@@ -286,7 +292,7 @@ main .hero-contents h1 {
   padding: 12px 16px;
   width: max-content;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 .form-btn:hover {
@@ -303,7 +309,7 @@ main .hero-contents h1 {
 .sign-in-text a {
   cursor: pointer;
   text-decoration: underline;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 /* Main Section - End */
@@ -347,41 +353,41 @@ main .hero-contents h1 {
   cursor: pointer;
   font-size: 16px;
   text-decoration: underline;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 /* Features Section - End */
 
 /* Map View - Start */
-.map-view {
+.sub-section {
   padding: 0 40px;
   min-width: 1024px;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.map-view .header {
+.heading {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 24px;
 }
 
-.map-view .header h1 {
+.heading h1 {
   line-height: 44px;
   font-family: "UberMove-Bold";
   font-weight: 700;
   font-size: 36px;
 }
 
-.map-view .header a {
+.heading a {
   line-height: 20px;
   font-weight: 500;
   text-decoration: underline;
   cursor: pointer;
   font-size: 16px;
   color: var(--dark);
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
 }
 
 .map-view-container {
@@ -400,6 +406,10 @@ main .hero-contents h1 {
   gap: 24px;
   grid-auto-flow: column;
   margin-top: 24px;
+}
+
+.grid-row-8 {
+  grid-template-rows: repeat(8, 1fr);
 }
 
 .grid-view a {
