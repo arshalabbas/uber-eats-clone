@@ -57,6 +57,11 @@ header {
   height: 64px;
   position: fixed;
   padding: 0px 40px;
+  transition: all 400ms ease;
+}
+
+.light-header {
+  background: var(--light);
 }
 
 header:first-child div {
@@ -78,7 +83,7 @@ header:first-child div {
 }
 
 .menu-icon-container:hover {
-  background-color: #ffffff;
+  background-color: #f3f3f3;
 }
 
 .menu-icon {
@@ -90,6 +95,34 @@ header:first-child div {
   width: auto;
   height: 16px;
   margin-left: 8px;
+}
+
+.location-selection {
+  opacity: 0;
+  background-color: var(--dark);
+  border-radius: 36px;
+  gap: 4px;
+  align-self: center;
+  padding: 0 16px;
+  height: 36px;
+  transition: all 400ms ease;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffff;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-left: 28px !important;
+}
+
+.location-selection-visible {
+  opacity: 100;
+}
+
+.location-selection:hover {
+  background-color: var(--dark-muted);
 }
 
 .btn {
@@ -111,17 +144,17 @@ header:first-child div {
 }
 
 .dark {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--light);
+  background-color: var(--dark);
 }
 
 .dark:hover {
-  background-color: #282828;
+  background-color: var(--dark-muted);
 }
 
 .light {
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--dark);
+  background-color: var(--light);
   margin-right: 17px;
 }
 
@@ -165,7 +198,7 @@ main .hero-contents h1 {
 .hero-element {
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: var(--light);
   line-height: 24px;
   font-weight: normal;
   font-size: 16px;
@@ -266,6 +299,7 @@ main .hero-contents h1 {
 .sign-in-text a {
   cursor: pointer;
   text-decoration: underline;
+  letter-spacing: 0.5px;
 }
 
 /* Main Section - End */
