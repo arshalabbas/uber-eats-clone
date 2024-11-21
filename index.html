@@ -35,20 +35,37 @@
       <div class="hero-contents">
         <h1>Order delivery near you</h1>
         <div class="hero-elements">
-          <div class="hero-element">
-            <img src="./assets/icons/location.svg" />
-            <input type="text" placeholder="Enter delivery address" />
+          <div class="hero-element input-field">
+            <div class="icon-container">
+              <img src="./assets/icons/location.svg" />
+            </div>
+            <div class="spacer-16"></div>
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Enter delivery address"
+            />
           </div>
-          <div class="hero-element">
-            <img src="./assets/icons/clock.svg" />
-            <p>Delivery Now</p>
-            <img src="./assets/icons/downaarrow.svg" />
+          <div class="spacer-8"></div>
+          <div class="hero-element select-field">
+            <div class="icon-container">
+              <img src="./assets/icons/clock.svg" />
+            </div>
+            <!-- <div class="spacer-16"></div> -->
+            <div class="dropdown">
+              <p>Deliver now</p>
+              <div class="spacer-4"></div>
+              <div class="icon-container">
+                <img src="./assets/icons/downaarrow.svg" />
+              </div>
+            </div>
           </div>
-          <div class="hero-element">
-            <button>Search Here</button>
+          <div class="spacer-8"></div>
+          <div>
+            <button class="form-btn">Search here</button>
           </div>
         </div>
-        <p>Or <a>Sign In</a></p>
+        <div class="sign-in-text">Or <a>Sign In</a></div>
       </div>
     </main>
     <!-- Main Section - End -->

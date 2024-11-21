@@ -1,3 +1,9 @@
+:root {
+  --dark: #000000;
+  --dark-muted: #282828;
+  --light: #ffffff;
+}
+
 @font-face {
   font-family: "UberMove-Medium";
   src: url(/assets/fonts/UberMoveMedium.otf);
@@ -14,6 +20,31 @@
   padding: 0;
   font-family: "UberMove-Medium";
   -webkit-font-smoothing: antialiased;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  color: #000000;
+}
+
+button {
+  border: none;
+}
+
+/* UTILITIE CLASSES */
+.spacer-4 {
+  width: 4px;
+}
+
+.spacer-8 {
+  width: 8px;
+}
+
+.spacer-16 {
+  width: 16px;
 }
 
 /* Header Section - Start */
@@ -109,35 +140,59 @@ main {
 
 main .hero-contents {
   padding: 0px 40px;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 main .hero-contents h1 {
+  font-family: "UberMove-Bold";
   display: block;
-  font-size: 52px;
-  line-height: 64px;
-  letter-spacing: 5;
+  max-width: 60%;
   margin-bottom: 40px;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  letter-spacing: 1.4px;
+  line-height: 64px;
+  font-size: 52px;
   font-weight: 700;
 }
 
 .hero-elements {
   display: flex;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .hero-element {
   display: flex;
   align-items: center;
   background: #ffffff;
-  padding: 8px 16px;
   line-height: 24px;
   font-weight: normal;
   font-size: 16px;
+  height: 56px;
+  min-height: 56px;
+}
+
+.input-field {
+  min-width: 500px;
+  padding: 8px 16px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.select-field {
+  height: 56px;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .hero-element input {
@@ -149,9 +204,68 @@ main .hero-contents h1 {
   font-size: 16px;
 }
 
-.hero-element img {
-  width: 24px;
-  height: 24px;
+.hero-element input::placeholder {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.input-field:focus-within {
+  box-shadow: rgb(39, 110, 241) 0px -2px 0px inset;
+}
+
+.input-field .icon-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.select-field .icon-container {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container img {
+  line-height: 1;
+  width: 23.9px;
+  height: 23.9px;
+}
+
+.form-btn {
+  height: 56px;
+  min-height: 56px;
+  font-size: 18px;
+  color: var(--light);
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: max-content;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.form-btn:hover {
+  background-color: var(--dark-muted);
+}
+
+.sign-in-text {
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+.sign-in-text a {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* Main Section - End */
