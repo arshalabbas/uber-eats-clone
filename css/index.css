@@ -4,26 +4,43 @@
   --light: #ffffff;
 }
 
+/* FONTS */
 @font-face {
   font-family: "UberMove";
-  src: url(/assets/fonts/UberMoveRegular.otf);
+  font-display: fallback;
+  src: url("/assets/fonts/UberMove-400.woff2") format("woff2");
+  font-weight: 400;
 }
-
 @font-face {
-  font-family: "UberMove-Medium";
-  src: url(/assets/fonts/UberMoveMedium.otf);
+  font-family: "UberMove";
+  font-display: fallback;
+  src: url("/assets/fonts/UberMove-500.woff2") format("woff2");
+  font-weight: 500;
 }
-
 @font-face {
-  font-family: "UberMove-Bold";
-  src: url(/assets/fonts/UberMoveBold.otf);
+  font-family: "UberMove";
+  font-display: fallback;
+  src: url("/assets/fonts/UberMove-700.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "UberMoveText";
+  font-display: fallback;
+  src: url("/assets/fonts/UberMoveText-400.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "UberMoveText";
+  font-display: fallback;
+  src: url("/assets/fonts/UberMoveText-500.woff2") format("woff2");
+  font-weight: 500;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "UberMove";
+  font-family: "UberMoveText";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -122,8 +139,6 @@ header:first-child div {
   white-space: nowrap;
   align-items: center;
   cursor: pointer;
-  font-weight: 600;
-  letter-spacing: 0.5px;
   margin-left: 28px !important;
 }
 
@@ -144,13 +159,12 @@ header:first-child div {
   justify-content: center;
   line-height: 16px;
   /* letter-spacing: 0.4px; */
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   white-space: nowrap;
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
-  font-stretch: ultra-condensed;
 }
 
 .dark {
@@ -165,7 +179,7 @@ header:first-child div {
 .light {
   color: var(--dark);
   background-color: var(--light);
-  margin-right: 17px;
+  margin-right: 16px;
 }
 
 /* Header Section - End */
@@ -190,7 +204,7 @@ main .hero-contents {
 }
 
 main .hero-contents h1 {
-  font-family: "UberMove-Bold";
+  font-family: "UberMove";
   display: block;
   max-width: 60%;
   margin-bottom: 40px;
@@ -340,9 +354,9 @@ main .hero-contents h1 {
 }
 
 .card h2 {
+  font-family: "UberMove";
   line-height: 36px;
   font-size: 28px;
-  font-family: "UberMove-Bold";
   font-weight: 700;
 }
 
@@ -374,8 +388,8 @@ main .hero-contents h1 {
 }
 
 .heading h1 {
+  font-family: "UberMove";
   line-height: 44px;
-  font-family: "UberMove-Bold";
   font-weight: 700;
   font-size: 36px;
 }
