@@ -4,6 +4,8 @@ const locationMark = document.querySelector("#location-mark");
 const drawerWrapper = document.querySelector("#drawer-wrapper");
 const drawer = document.querySelector("aside");
 
+const dropDownMenu = document.querySelector(".drop-container");
+
 window.addEventListener("scroll", (e) => {
   header.classList.toggle("light-header", window.scrollY !== 0);
   locationMark.classList.toggle(
@@ -21,4 +23,8 @@ function openDrawer() {
 function closeDrawer() {
   drawerWrapper.classList.remove("open");
   drawer.classList.remove("open");
+}
+
+function openDropDown() {
+  dropDownMenu.classList.toggle("open");
 }
