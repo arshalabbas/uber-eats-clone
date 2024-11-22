@@ -100,6 +100,10 @@ li {
   height: 0.5px;
 }
 
+.disable-scroll {
+  overflow: hidden;
+}
+
 /* Drawer */
 
 #drawer-wrapper {
@@ -172,6 +176,7 @@ aside nav {
 }
 
 .branding-label-container p {
+  margin-left: 4px;
   line-height: 20px;
   font-weight: 500;
   font-size: 16px;

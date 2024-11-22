@@ -18,11 +18,13 @@ window.addEventListener("scroll", (e) => {
 function openDrawer() {
   drawerWrapper.classList.toggle("open");
   drawer.classList.toggle("open");
+  document.body.classList.toggle("disable-scroll");
 }
 
 function closeDrawer() {
   drawerWrapper.classList.remove("open");
   drawer.classList.remove("open");
+  document.body.classList.remove("disable-scroll");
 }
 
 function openDropDown() {
