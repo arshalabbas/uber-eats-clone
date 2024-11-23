@@ -39,6 +39,23 @@
     display: none !important;
   }
 
+  .cards-container {
+    flex-direction: column;
+    margin-bottom: -24px;
+    margin: 0px 0px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 36px;
+  }
+
+  .card h2 {
+    line-height: 32px;
+    font-size: 24px;
+  }
+
   /* main .hero-contents h1 {
     font-size: 36px;
   } */
