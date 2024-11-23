@@ -32,11 +32,11 @@
   }
 
   .only-native {
-    display: block;
+    display: flex !important;
   }
 
   .only-desktop {
-    display: none;
+    display: none !important;
   }
 
   /* main .hero-contents h1 {

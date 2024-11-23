@@ -91,6 +91,14 @@ li {
   height: 8px;
 }
 
+.v-spacer-32 {
+  height: 32px;
+}
+
+.v-spacer-48 {
+  height: 48px;
+}
+
 .v-spacer-80 {
   height: 80px;
 }
@@ -106,11 +114,11 @@ li {
 }
 
 .only-native {
-  display: none;
+  display: none !important;
 }
 
 .only-desktop {
-  display: block;
+  display: flex !important;
 }
 
 /* Drawer */
