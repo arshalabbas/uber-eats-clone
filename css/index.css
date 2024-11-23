@@ -91,6 +91,10 @@ li {
   height: 8px;
 }
 
+.v-spacer-24 {
+  height: 24px;
+}
+
 .v-spacer-32 {
   height: 32px;
 }

@@ -56,6 +56,37 @@
     font-size: 24px;
   }
 
+  .heading {
+    margin: 0;
+  }
+
+  .heading h1 {
+    line-height: 32px;
+    font-size: 24px;
+  }
+
+  .heading a {
+    display: none;
+  }
+
+  .sub-section {
+    padding: 0 16px;
+  }
+
+  .map-view-container {
+    margin: 16px 0px;
+  }
+
+  .grid-view {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 8px;
+  }
+
+  .grid-row-8 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+
   /* main .hero-contents h1 {
     font-size: 36px;
   } */

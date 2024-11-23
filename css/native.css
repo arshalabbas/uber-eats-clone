@@ -251,3 +251,12 @@
   height: 18px;
   width: 18px;
 }
+
+.view-link {
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--dark);
+}
