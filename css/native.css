@@ -1,0 +1,187 @@
+.native-header {
+  width: 100%;
+  display: none; /* Default to none (larger devices) */
+  position: static;
+  height: 48px;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: transparent;
+  align-items: center;
+}
+
+.native-header .left,
+.native-header .right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container {
+  margin-right: 10px;
+  margin-left: -6px;
+}
+
+.menu-container .icon-container {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container .icon-container img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-container-native {
+  display: flex;
+}
+
+.logo-container-native img {
+  height: 16px;
+  width: auto;
+  /* aspect-ratio: 146 / 24; */
+}
+
+.login-icon-btn {
+  margin-right: 12px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+  background: var(--light);
+  border-radius: 500px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-icon-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Hero Section - Start */
+
+.hero-container-native {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-contents-native {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-contents-native h1 {
+  margin-bottom: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "UberMove";
+}
+
+.hero-element-native {
+  box-shadow: unset;
+  background-color: unset;
+}
+
+.hero-element-native.location {
+  padding: 8px 0;
+}
+
+.hero-element-native .input-mock {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: var(--light);
+  box-shadow: inset 0px -1 0px var(--light-muted);
+}
+
+.input-mock.location {
+  padding-left: 4px;
+}
+
+.input-mock img {
+  margin: 12px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inpu-mock.location p {
+  color: #484848;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.input-mock.del-time .icon.container {
+  flex-shrink: 0;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-mock.del-time .dropdown-label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 100%;
+}
+
+.input-mock.del-time .dropdown-label p {
+  line-height: 20px;
+  flex-grow: 1;
+  font-weight: 500;
+  font-size: 16px;
+  flex-direction: column;
+  display: flex;
+}
+
+.search-btn-native {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 18px;
+  background: var(--dark);
+  color: var(--light);
+  cursor: pointer;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.sign-in-native {
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+.sign-in-native a {
+  color: var(--dark);
+  text-decoration: underline;
+  cursor: pointer;
+}

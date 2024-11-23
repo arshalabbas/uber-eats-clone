@@ -8,9 +8,12 @@
       Uber Eats | Food & Grocery Delivery | Order Groceries and Food Online
     </title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/native.css" />
+    <link rel="stylesheet" href="./css/res.css" />
   </head>
   <body>
     <!-- Header -->
+    <!-- Header Desktop - Start -->
     <header>
       <!-- left items -->
       <div class="left-container">
@@ -44,14 +47,46 @@
         </div>
       </div>
       <!-- right items -->
-      <div>
+      <div class="right-container">
         <a class="btn light">Log in</a>
         <a class="btn dark">Sign up</a>
       </div>
     </header>
+    <!-- Header Desktop - End -->
 
     <!-- Main Section - Start -->
     <main>
+      <!-- Header Native - Start -->
+      <div class="native-header">
+        <!-- Header Left - Start -->
+        <div class="left">
+          <div class="menu-container">
+            <div class="icon-container">
+              <img src="./assets/icons/menu.svg" alt="menu-native-icon" />
+            </div>
+          </div>
+          <div class="logo-container-native">
+            <img
+              src="./assets/images/logo.svg"
+              alt="logo-native"
+              width="146"
+              height="24"
+              class=".logo-native"
+            />
+          </div>
+        </div>
+        <!-- Header Left - End -->
+        <!-- Header Right - Start -->
+        <div class="right">
+          <a href="#" class="login-icon-btn">
+            <img src="./assets/icons/profile.svg" />
+          </a>
+          <a class="btn dark">Sign up</a>
+        </div>
+        <!-- Header Right - End -->
+      </div>
+      <!-- Header Native - End -->
+      <!-- Hero Content Desktop -->
       <div class="hero-contents">
         <h1>Order delivery near you</h1>
         <div class="hero-elements">
@@ -106,6 +141,55 @@
         </div>
         <div class="sign-in-text">Or <a>Sign In</a></div>
       </div>
+      <!-- Hero Content Desktop - End -->
+
+      <!-- Hero Content Native - Start -->
+      <div class="hero-container-native">
+        <!-- Actual Content - Start -->
+        <div class="hero-contents-native">
+          <h1>Order delivery near you</h1>
+          <!-- Location Input Mock - Start -->
+          <div class="hero-element-native location">
+            <div class="input-mock location">
+              <img
+                src="./assets/icons/location.svg"
+                alt="location-icon-native"
+              />
+              <p>Enter delivery address</p>
+            </div>
+          </div>
+          <!-- Location Input Mock - End -->
+
+          <!-- Delivery Time Selection Mock - Start -->
+          <div class="hero-element-native del-time">
+            <div class="input-mock del-time">
+              <div class="spacer-4"></div>
+              <div class="icon-container">
+                <img src="./assets/icons/clock.svg" alt="down-arrow-native" />
+              </div>
+              <div class="dropdown-label">
+                <p>Deliver now</p>
+                <div class="spacer-4"></div>
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/downaarrow.svg"
+                    alt="down-arrow-native"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Delivery Selection Mock - End -->
+          <a href="#" class="search-btn-native"> Search here </a>
+          <div class="sign-in-native">
+            Or
+            <a href="#">Sign In</a>
+          </div>
+        </div>
+        <!-- Actual Content- End -->
+      </div>
+
+      <!-- Hero Content Native - End -->
     </main>
     <!-- Main Section - End -->
 

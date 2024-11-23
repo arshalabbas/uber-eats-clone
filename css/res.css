@@ -1,0 +1,45 @@
+.hero-contents-native {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  main {
+    align-items: flex-start;
+    background: url(/assets/images/hero-native.webp) no-repeat center;
+    background-size: cover;
+    flex-direction: column;
+  }
+
+  header {
+    display: none;
+  }
+
+  .native-header {
+    display: flex;
+  }
+
+  .location-selection {
+    /* opacity: 1; */
+    display: none;
+  }
+
+  .hero-contents {
+    display: none;
+  }
+
+  .hero-contents-native {
+    display: flex;
+  }
+
+  .only-native {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  /* main .hero-contents h1 {
+    font-size: 36px;
+  } */
+}
