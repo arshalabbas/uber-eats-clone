@@ -87,6 +87,28 @@
     grid-template-rows: repeat(15, 1fr);
   }
 
+  footer {
+    padding: 64px 0px 126px;
+  }
+
+  .footer-right {
+    margin-bottom: 26px;
+  }
+
+  .footer-content {
+    padding: 0 16px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-bottom-1,
+  .copy,
+  .info-links {
+    flex-direction: column;
+  }
+
   /* main .hero-contents h1 {
     font-size: 36px;
   } */

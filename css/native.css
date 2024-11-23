@@ -70,17 +70,17 @@
 /* Hero Section - Start */
 
 .hero-container-native {
-  margin-top: 55px;
+  margin-top: 56px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .hero-contents-native {
-  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 16px;
 }
 
 .hero-contents-native h1 {
@@ -110,6 +110,7 @@
 
 .input-mock.location {
   padding-left: 4px;
+  color: #4b4b4b;
 }
 
 .input-mock img {
