@@ -250,6 +250,7 @@ header {
   position: fixed;
   padding: 0px 40px;
   transition: all 400ms ease;
+  z-index: 10;
 }
 
 .light-header {
@@ -508,6 +509,10 @@ main .hero-contents h1 {
   line-height: 20px;
   font-weight: 500;
   font-size: 16px;
+}
+
+.dropdown p {
+  white-space: nowrap;
 }
 
 .hero-element input {
