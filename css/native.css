@@ -122,8 +122,7 @@
   align-items: center;
 }
 
-.inpu-mock.location p {
-  color: #484848;
+.input-mock.location p {
   line-height: 24px;
   font-weight: normal;
   font-size: 16px;
@@ -260,4 +259,29 @@
   cursor: pointer;
   font-size: 16px;
   color: var(--dark);
+}
+
+.location-header {
+  opacity: 0;
+  z-index: -999;
+  display: flex;
+  background-color: var(--light);
+  width: 100%;
+  padding: 0 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.lcation-header.on-visible {
+  opacity: 1;
+  z-index: 999;
+}
+
+.location-header .hero-element-native {
+  flex: 1;
+}
+
+.location-header .input-mock {
+  background-color: var(--light-muted);
 }

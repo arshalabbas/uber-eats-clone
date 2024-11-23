@@ -54,13 +54,24 @@
     </header>
     <!-- Header Desktop - End -->
 
+    <!-- Native Only Location Header - Start  -->
+    <div class="location-header only-native" id="location-header">
+      <div class="hero-element-native location">
+        <div class="input-mock location">
+          <img src="./assets/icons/location.svg" alt="location-icon-native" />
+          <p>Enter delivery address</p>
+        </div>
+      </div>
+    </div>
+    <!-- Native Only Location Header - End  -->
+
     <!-- Main Section - Start -->
     <main>
       <!-- Header Native - Start -->
       <div class="native-header">
         <!-- Header Left - Start -->
         <div class="left">
-          <div class="menu-container">
+          <div class="menu-container" onclick="openDrawer()">
             <div class="icon-container">
               <img src="./assets/icons/menu.svg" alt="menu-native-icon" />
             </div>
@@ -471,11 +482,12 @@
                 <div class="spacer-8"></div>
                 iPhone
               </a>
-              <div class="spacer-8"></div>
+              <div class="spacer-8 only-desktop"></div>
               <a href="#">
                 <img src="./assets/icons/android.svg" alt="android icon" />
                 <div class="spacer-8"></div>
-                Android
+                <span class="only-desktop">Android</span
+                ><span class="only-native">Get the app</span>
               </a>
             </div>
           </div>

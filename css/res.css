@@ -109,6 +109,10 @@
     flex-direction: column;
   }
 
+  .nav-store-container a:first-child {
+    display: none;
+  }
+
   /* main .hero-contents h1 {
     font-size: 36px;
   } */
