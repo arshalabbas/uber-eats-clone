@@ -5,7 +5,7 @@
 @media (max-width: 890px) {
   main {
     align-items: flex-start;
-    background: url(/assets/images/hero-native.webp) no-repeat center;
+    background: url(../assets/images/hero-native.webp) no-repeat center;
     background-size: cover;
     flex-direction: column;
   }
