@@ -83,6 +83,10 @@ li {
   width: 24px;
 }
 
+.spacer-34 {
+  width: 34px;
+}
+
 .spacer-40 {
   width: 40px;
 }
@@ -105,6 +109,10 @@ li {
 
 .v-spacer-32 {
   height: 32px;
+}
+
+.v-spacer-36 {
+  height: 36px;
 }
 
 .v-spacer-40 {
@@ -267,10 +275,15 @@ header {
   padding: 0px 40px;
   transition: all 400ms ease;
   z-index: 10;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: solid;
 }
 
 .light-header {
   background: var(--light);
+  outline-width: 1px;
+  outline-color: rgb(243, 243, 243);
 }
 
 header .left-container {
@@ -617,7 +630,7 @@ main .hero-contents h1 {
 .card {
   padding: 0px 12px;
   width: calc(100% / 3);
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .card a {
@@ -699,11 +712,12 @@ main .hero-contents h1 {
   grid-template-rows: repeat(6, 1fr);
   gap: 24px;
   grid-auto-flow: column;
-  margin-top: 24px;
+  /* margin-top: 24px; */
 }
 
 .grid-row-8 {
   grid-template-rows: repeat(8, 1fr);
+  margin-top: 24px;
 }
 
 .grid-view a {
@@ -720,7 +734,7 @@ main .hero-contents h1 {
 
 footer {
   border-top: 1px solid var(--light-muted);
-  padding: 72px 0px 86px;
+  padding: 72px 0px 88px;
   background-color: var(--light);
 }
 
@@ -768,6 +782,10 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.footer-middle li:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-right {

@@ -48,7 +48,7 @@
   .card {
     width: 100%;
     padding: 0 16px;
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
   }
 
   .card h2 {
@@ -85,10 +85,11 @@
   .grid-row-8 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(15, 1fr);
+    gap: 24px 8px;
   }
 
   footer {
-    padding: 64px 0px 126px;
+    padding: 64px 0px 120px;
   }
 
   .footer-right {
