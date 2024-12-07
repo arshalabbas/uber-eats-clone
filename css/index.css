@@ -67,6 +67,11 @@ li {
 }
 
 /* UTILITIE CLASSES */
+.spacer {
+  height: 1px;
+  flex-shrink: 0;
+}
+
 .spacer-4 {
   width: 4px;
 }
@@ -758,7 +763,7 @@ footer {
 }
 
 .footer-left img {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   height: 24px;
   width: auto;
   filter: unset;
@@ -782,6 +787,7 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin-top: -1px;
 }
 
 .footer-middle li:last-child {
