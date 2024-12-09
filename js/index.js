@@ -23,7 +23,7 @@ window.addEventListener("scroll", (e) => {
     locationHeader.style.opacity = 0;
     locationHeader.style.zIndex = -999;
   }
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
 });
 
 function openDrawer() {
